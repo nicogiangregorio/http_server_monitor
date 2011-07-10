@@ -1,8 +1,15 @@
-This is a very simple HTTP Client.
+This is a very simple HTTP server monitor.
 
-Source code is realized on 90% using Boost Asio and followinf the following example:
+It performs a check on "server-status" of HTTPD and shows some information about server activity.
+Obviously, it requires that mod_status is enabled on the server to be checked.
+
+Source code is realized on 50% using Boost Asio and following the following example:
 
 http://www.boost.org/doc/libs/1_46_1/doc/html/boost_asio/example/allocation/server.cpp
 
 Copyright (c) 2003-2011 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 Distributed under the Boost Software License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
+
+I used mainly Boost libraries for realizing threadpool, thread management, bind, etc.
+
+
